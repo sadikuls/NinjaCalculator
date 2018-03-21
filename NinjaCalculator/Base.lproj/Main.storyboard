@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,48 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NinjaCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ozC-iq-37n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="r4l-1V-iG7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="3yn-Sc-CRS">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="e2a-E7-Gg8"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3yn-Sc-CRS" secondAttribute="bottom" id="KYU-CZ-PSg"/>
+                                    <constraint firstAttribute="trailing" secondItem="3yn-Sc-CRS" secondAttribute="trailing" id="i8X-CY-PXz"/>
+                                    <constraint firstItem="3yn-Sc-CRS" firstAttribute="leading" secondItem="ozC-iq-37n" secondAttribute="leading" id="wIf-RP-S0d"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ozC-iq-37n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9HB-6E-f80"/>
+                            <constraint firstItem="ozC-iq-37n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9yr-1G-Khm"/>
+                            <constraint firstItem="ozC-iq-37n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ajk-Sk-LRa"/>
+                            <constraint firstItem="ozC-iq-37n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cxh-Hm-KGn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ground" width="888" height="72"/>
+        <image name="space-bg" width="988" height="946"/>
+    </resources>
 </document>
