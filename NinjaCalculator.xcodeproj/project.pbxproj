@@ -14,6 +14,7 @@
 		50BA1E1B20623D5500275B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BA1E1920623D5500275B40 /* LaunchScreen.storyboard */; };
 		50BA1E2620623D5500275B40 /* NinjaCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA1E2520623D5500275B40 /* NinjaCalculatorTests.swift */; };
 		50BA1E3120623D5500275B40 /* NinjaCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA1E3020623D5500275B40 /* NinjaCalculatorUITests.swift */; };
+		50BA1E3F2063884100275B40 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50BA1E3E2063884100275B40 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		50BA1E2C20623D5500275B40 /* NinjaCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinjaCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BA1E3020623D5500275B40 /* NinjaCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaCalculatorUITests.swift; sourceTree = "<group>"; };
 		50BA1E3220623D5500275B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BA1E3E2063884100275B40 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				50BA1E1020623D5500275B40 /* AppDelegate.swift */,
 				50BA1E1220623D5500275B40 /* ViewController.swift */,
+				50BA1E3E2063884100275B40 /* Minecraft.ttf */,
 				50BA1E1420623D5500275B40 /* Main.storyboard */,
 				50BA1E1720623D5500275B40 /* Assets.xcassets */,
 				50BA1E1920623D5500275B40 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				50BA1E1B20623D5500275B40 /* LaunchScreen.storyboard in Resources */,
 				50BA1E1820623D5500275B40 /* Assets.xcassets in Resources */,
+				50BA1E3F2063884100275B40 /* Minecraft.ttf in Resources */,
 				50BA1E1620623D5500275B40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
