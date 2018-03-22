@@ -43,29 +43,29 @@ class ViewController: UIViewController {
         }
     }
 
+    //clicked on any number button
     @IBAction func numberPressed(sender: UIButton){
         playSound()
         runningNumebr += "\(sender.tag)"
         lblOutputTxgt.text = runningNumebr
-        
-        
     }
     
+    //clicked on devide button
     @IBAction func devideButtonPressed(sender: UIButton){
         processOperation(operation: .Divide)
     }
-    
+    //clicked on add button
     @IBAction func addButtonPressed(sender: UIButton){
     
         processOperation(operation: .Add)
     }
-    
+    //clicked on substract button
     @IBAction func subButtonPressed(sender: UIButton){
         
         processOperation(operation: .Subtract)
         
     }
-    
+    //clicked on multiply button
     @IBAction func multiplyButtonPressed(sender: UIButton){
         
         processOperation(operation: .Multiply)
@@ -73,23 +73,29 @@ class ViewController: UIViewController {
     
     
     
+    //handle click on equal button
     @IBAction func equalButtonPressed(sender: UIButton){
         processOperation(operation: currentOperation)
     }
     
     func playSound(){
+        //check if music is playing then stop it first
         if btnSound.isPlaying{
             btnSound.stop()
         }
-        
+        //play the music on button pressed
         btnSound.play()
     }
     
+    
+    //function that handle all operation in operational button pressed
     func processOperation(operation: Operation){
         if currentOperation != Operation.Empty{
             if runningNumebr != ""{
+                //if running number not null then assign it to right value
                 rightValStar = runningNumebr;
                 runningNumebr = ""
+                
                 if currentOperation == Operation.Divide{
                     resultValStar = "\(Double(leftValueStar)! / Double(rightValStar)!)"
                 }else if currentOperation == Operation.Multiply{
@@ -105,8 +111,11 @@ class ViewController: UIViewController {
             }
             currentOperation = operation
         }else{
+            //if first time button pressed then if assigned to left hand and running number set to null
             leftValueStar = runningNumebr
             runningNumebr = ""
+            
+            //setting current operation if it pressed for the first time
             currentOperation = operation
         }
     }
