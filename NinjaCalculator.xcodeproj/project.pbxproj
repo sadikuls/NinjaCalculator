@@ -15,6 +15,7 @@
 		50BA1E2620623D5500275B40 /* NinjaCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA1E2520623D5500275B40 /* NinjaCalculatorTests.swift */; };
 		50BA1E3120623D5500275B40 /* NinjaCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA1E3020623D5500275B40 /* NinjaCalculatorUITests.swift */; };
 		50BA1E3F2063884100275B40 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50BA1E3E2063884100275B40 /* Minecraft.ttf */; };
+		50BA1E4120638F2600275B40 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 50BA1E4020638F2600275B40 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		50BA1E3020623D5500275B40 /* NinjaCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaCalculatorUITests.swift; sourceTree = "<group>"; };
 		50BA1E3220623D5500275B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50BA1E3E2063884100275B40 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		50BA1E4020638F2600275B40 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				50BA1E1020623D5500275B40 /* AppDelegate.swift */,
+				50BA1E4020638F2600275B40 /* btn.wav */,
 				50BA1E1220623D5500275B40 /* ViewController.swift */,
 				50BA1E3E2063884100275B40 /* Minecraft.ttf */,
 				50BA1E1420623D5500275B40 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BA1E4120638F2600275B40 /* btn.wav in Resources */,
 				50BA1E1B20623D5500275B40 /* LaunchScreen.storyboard in Resources */,
 				50BA1E1820623D5500275B40 /* Assets.xcassets in Resources */,
 				50BA1E3F2063884100275B40 /* Minecraft.ttf in Resources */,
